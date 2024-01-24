@@ -10,6 +10,17 @@
 
 //  constructor(private http: HttpClient) {}
 
+//A TABELA QUE REGISTRA SOLICITAÇÕES:
+//    CREATE TABLE Compra (
+//    Id INT PRIMARY KEY IDENTITY(1,1),
+//    NomeSolicitante NVARCHAR(255),
+//    DescricaoItem NVARCHAR(MAX),
+//    PrecoProduto NVARCHAR(10),
+//    AcaoAprovacao NVARCHAR(10),
+//    Observacao NVARCHAR(MAX)
+//    );
+
+
 //  registrarSolicitacao(nome: string, descricao: string, preco: string): Observable<any> {
 //    console.log("Entrou no registrarSolicitacao");
     //const body = { nome, descricao, preco };

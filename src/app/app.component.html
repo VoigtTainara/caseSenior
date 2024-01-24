@@ -1,5 +1,6 @@
 <div>
-  <button (click)="redirecionarParaOutroComponente()"> Acesso ao almoxarife </button>
+  <button (click)="redirecionarParaAlmoxarife()"> Acesso ao almoxarife </button>
+  <button (click)="redirecionarParaAdministrativo()"> Acesso ao administrativo </button>
 
   <div>
     <label for="solicitante">Nome do Solicitante:</label>
@@ -19,8 +20,8 @@
   <button (click)="registrarCompra(solicitanteField.value, descricaoItemField.value, precoProdutoField.value)">Registrar Compra</button>
 
   <!-- Somente para exibição dos dados inseridos -->
-  <div [class.mostrar-elemento]="compraRegistrada">
-    <h3>Dados da Compra Registrada:</h3>
+  <div compraRegistrada>
+    <h2>Dados da Compra Realizada:</h2>
     <p><strong>Nome do Solicitante:</strong> {{ solicitanteField.value }}</p>
     <p><strong>Descrição do Item:</strong> {{ descricaoItemField.value }}</p>
     <p><strong>Preço do Produto:</strong> R$ {{ precoProdutoField.value }}</p>

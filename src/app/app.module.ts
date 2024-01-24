@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AlmoxarifeComponent } from '../almoxarife/almoxarife.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AdministrativoComponent } from '../administrativo/administrativo.component';
 
 @NgModule({
     declarations: [
       AppComponent,
       AlmoxarifeComponent,
+      AdministrativoComponent,
     ],
     imports: [
       NgModule,

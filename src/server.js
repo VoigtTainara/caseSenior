@@ -18,13 +18,15 @@ const config = {
   },
 };
 
-// a tabela criada no banco:
-//CREATE TABLE Compra (
+//    a tabela criada no banco:
+//    CREATE TABLE Compra (
 //    Id INT PRIMARY KEY IDENTITY(1,1),
 //    NomeSolicitante NVARCHAR(255),
 //    DescricaoItem NVARCHAR(MAX),
 //    PrecoProduto NVARCHAR(10)
-//);
+//    AcaoAprovacao NVARCHAR(10),
+//    Observacao NVARCHAR(MAX)
+//    );
 app.post('/solicitacao', async (req, res) => {
   try {
     await sql.connect(config);

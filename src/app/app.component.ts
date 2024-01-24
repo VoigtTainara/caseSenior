@@ -18,13 +18,15 @@ export class AppComponent {
 
   constructor(private router: Router) {} //private appService: AppService
 
-  redirecionarParaOutroComponente(): void {
-    console.log('Redirecionando:');
-
-    //this.redirecionou = true;
+  redirecionarParaAlmoxarife(): void {
+    console.log('Redirecionando para o almoxarife:');
     this.router.navigate(['almoxarife']);
   }
 
+  redirecionarParaAdministrativo(): void {
+    console.log('Redirecionando para o administrativo:');
+    this.router.navigate(['administrativo']);
+  }
 
   registrarCompra(solicitante: string, descricaoItem: string, precoProduto: string): void {
     this.compraRegistrada = true;
